@@ -4,6 +4,8 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.2'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+
+gem 'rake', '< 11.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -23,7 +25,7 @@ gem 'jbuilder', '~> 2.0'
 # gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -39,7 +41,7 @@ group :development, :test do
   gem 'pry-byebug'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring'
+
 
   gem 'rspec-rails', '~> 3.0'
   gem 'capybara'
